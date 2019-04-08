@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/views/views"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#D70000",
+    "navigationBarTitleText": "新闻客户端",
+    "navigationBarTextStyle":"#FFFFFF",
+    "enablePullDownRefresh": true
+  }
+}

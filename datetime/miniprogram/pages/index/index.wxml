@@ -1,0 +1,5 @@
+<view bindtap="startTap" class="form">开始时间：{{startDate}}</view>
+<!-- <view bindtap="endTap" class="form">结束时间：{{endDate}}</view>
+<view bindtap="applyTap" class="form">申请时间：{{applyDate}}</view> -->
+
+<include src="../tools/wxml/picker_datetime.wxml"/>

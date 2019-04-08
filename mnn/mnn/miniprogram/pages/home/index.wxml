@@ -1,0 +1,14 @@
+    <view class='view-container'>  
+      <block wx:for-items='{{list}}' wx:key='{{item.id}}'>  
+        <view class='articles-container'>  
+          <view class='info'>  
+            <!-- <image class='avatar' src='{{item.begin_time}}'></image>{{item.nickname}}   -->
+            <text class='created-at'>{{item.list[0].begin_time}}</text>  
+            <text class='category'>{{item.address}}</text>  
+          </view>  
+        </view>  
+      </block>  
+      <view class='data-loading' hidden='{{hidden}}'>  
+        数据加载中...  
+      </view>  
+    </view>  

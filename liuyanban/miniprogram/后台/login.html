@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+    <title>科技微讯留言板后台</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		*{margin:0px; padding: 0px;}
+		.alert-info{
+			width: 95%;
+			margin:30px auto 0;
+		}
+		
+		.form-group{
+			width: 95%;
+			margin:30px auto 0;
+		}
+
+		.btn-default{
+			width: 100%;
+		}
+
+	</style>
+</head>
+<body>
+<div class="alert alert-info">登录科技微讯留言板后台！</div>
+<form role="form" action="logincheck.php" method="post">
+	<div class="form-group">
+		<label for="name">账号</label>
+		<input type="text" class="form-control" id="name" name="user" class="input_con" value="admin"><br/>
+
+		<label for="name">密码</label>
+		<input type="text" class="form-control" id="name" name="psw" class="input_con" placeholder="请输入密码">
+
+	</div>
+	<div class="form-group"><button type="submit" class="btn btn-default">登录</button></div>
+</form>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<!--pages/eg01/eg01.wxml-->
+<!-- <image src='{{pic}}'></image> -->
+
+<text class='category'>{{title}}</text> 

@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/uploadPhotoMore/uploadPhotoMore",
+    "pages/index/index",
+   
+    "pages/uploadPhoto/uploadPhoto",
+    "pages/upOK/upOK"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "上传图片",
+    "navigationBarTextStyle": "#fff"
+  }
+}

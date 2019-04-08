@@ -1,0 +1,18 @@
+/* pages/eg/eg.wxss */
+/* 图片左间距40rpx */
+.pic {
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 40rpx;
+  margin-top: 50rpx;
+}
+ 
+/* 选择器控制页面的宽度布局，每行4个图片，每行第一个图片距离左边15rpx */
+.pic:nth-of-type(4n+1) {
+  margin-left: 15rpx;
+}
+/* 1，2，3，4图片距离上边距10rpx */
+.pic:nth-of-type(1), .pic:nth-of-type(2), .pic:nth-of-type(3),
+.pic:nth-of-type(4) {
+  margin-top: 10rpx;
+}

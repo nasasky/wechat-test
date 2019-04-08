@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+<swiper indicator-dots="true"
+  autoplay="true" interval="3000" duration="500" class='flash'>
+  <block wx:for="{{imgUrls}}" wx:key>
+    <swiper-item>
+      <image src="{{item.pic}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+  <view class='labels'>新闻列表</view>
+  <view class='indexList'>
+    <view class='ul'>
+        <view wx:for="{{infoList}}" wx:key=''>
+          <navigator url='../views/views?id={{item.id}}' class='li'>
+            <text>{{item.name}}</text><label>08-09</label>
+          </navigator>
+        </view>
+    </view>  
+  </view>
+
+<view hidden="{{hidden}}" class="loading">
+  <view class="loadingTxt">..信息加载中..</view>
+</view>
+
+<view class="displayNo" hidden="{{display}}">
+  ---------- 没有信息啦 ----------
+</view>
+
+</view>

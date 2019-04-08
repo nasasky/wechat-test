@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F9F9F8",
+    "navigationBarTitleText": "科技微讯",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#F9F9F8"
+  }
+}

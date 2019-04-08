@@ -1,0 +1,26 @@
+<view>
+<view class="title">爆料 / 建议</view>
+<view class="int">有什么很多人不知道，但很值得分享的新鲜事吗？欢迎爆料！科技微讯有哪些地方需要改进呢？也欢迎提建议哦！</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">    
+<!--输入区域  -->
+<textarea name="userliuyan" placeholder="请输入内容或链接" placeholder-class="phcolor" class="textarea" maxlength="{{noteMaxLen}}" bindinput="bindWordLimit"></textarea> 
+<!--字数统计  -->
+<text class="wordLimit ff-hv">{{currentNoteLen|0}}/{{noteMaxLen}} </text>
+<!--相关链接  -->
+<input type="url" name="xgurl" placeholder='如有相关链接请粘贴' class="xgurl" placeholder-class="xgurl-phcolor"></input>
+<view class="imgfile">图片上传</view>
+<!--上传并显示图片  -->
+<view style="width:90%;height:90px;margin:0 auto 30px;">
+<view bindtap="uploadimg" class="imgselect"><image src="{{source}}"></image></view>
+</view>
+<!--获取上传成功的图片地址  -->
+<input type='text' value='{{source}}' name="filename" style="display:none;"></input>
+<!--提交按钮  -->
+<button formType="submit" class="btn">提交</button>    
+</form>
+<!--客服按钮  -->
+<contact-button class="kefu"></contact-button>
+<!--底部  -->
+<view class="footer"><image src="kejiweixun.png"></image></view>
+</view>
